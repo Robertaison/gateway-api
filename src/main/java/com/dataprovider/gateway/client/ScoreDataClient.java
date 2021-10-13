@@ -1,7 +1,7 @@
 package com.dataprovider.gateway.client;
 
+import com.dataprovider.gateway.dto.scoredata.ScoreDataDto;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,5 +10,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface ScoreDataClient {
 
   @RequestMapping(method = RequestMethod.GET, value = "/score-data")
-  String get(@RequestParam String cpf);
+  ScoreDataDto get(@RequestParam String cpf);
 }

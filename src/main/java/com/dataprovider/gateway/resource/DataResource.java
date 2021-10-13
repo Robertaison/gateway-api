@@ -1,9 +1,8 @@
 package com.dataprovider.gateway.resource;
 
-import com.dataprovider.gateway.client.ScoreDataClient;
-import com.dataprovider.gateway.client.SensitiveDataClient;
+import com.dataprovider.gateway.dto.scoredata.ScoreDataDto;
+import com.dataprovider.gateway.service.DataService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,10 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class DataResource {
 
   @Autowired
-  ScoreDataClient scoreDataClient;
+  private DataService dataService;
 
-  @GetMapping(value = "/score-data", produces = MediaType.APPLICATION_JSON_VALUE)
-  public ResponseEntity<String> getScoreDataFromCustomer(@RequestParam String cpf) {
-    return ResponseEntity.ok(scoreDataClient.get(cpf));
+  @GetMapping(value = "/score-data")
+  public ResponseEntity<ScoreDataDto> getScoreDataFromCustomer(@RequestParam String cpf) {
+    return ResponseEntity.ok(dataService.getScoreDataFromCustomer(cpf));
   }
 }
