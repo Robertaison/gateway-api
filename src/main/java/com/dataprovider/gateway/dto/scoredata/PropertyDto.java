@@ -1,6 +1,5 @@
 package com.dataprovider.gateway.dto.scoredata;
 
-import lombok.Builder;
 import lombok.Data;
 
 @Data

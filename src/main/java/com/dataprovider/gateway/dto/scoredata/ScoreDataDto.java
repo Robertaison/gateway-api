@@ -1,11 +1,9 @@
 package com.dataprovider.gateway.dto.scoredata;
 
 import java.util.Set;
-import lombok.Builder;
 import lombok.Data;
 
 @Data
-@Builder
 public class ScoreDataDto {
 
   private String cpf;
