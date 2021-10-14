@@ -23,11 +23,12 @@ Example: docker-compose -f mongo.yaml
 - Second we must download all projects that belongs to this solution
 ```
 So, we must download and run each one of the projetcs below:
+- First one: https://github.com/Robertaison/dataupdate-job
+ *It must be the first one because it'll create de queue structures used by others services.*
 - https://github.com/Robertaison/gateway-api (This one)
 - https://github.com/Robertaison/scoredata-api
 - https://github.com/Robertaison/tracedata-api
 - https://github.com/Robertaison/sensitivedata-api
-- https://github.com/Robertaison/dataupdate-job
 ```
 - Now, our gateway can consume the services, it only depends of an available mass of data.
 
