@@ -20,13 +20,13 @@ Or you can launch each one at once with the following command:
 Example: docker-compose -f mongo.yaml
 ```
 
-- Second we must download all projects that belongs to this solution
+- Second we must run the first project
 ```
-So, we must download and run each one of the projetcs below:
+So, we must download and run the projetc below:
 - First one: https://github.com/Robertaison/dataupdate-job  
 - After that, we need to post some data to build rabbit structure (needs fix)
 (It must be the first one because it'll create de queue structures used by others services)
-- To check how do posts look at "Read me"
+- To check how to do posts, look at "Read me" at https://github.com/Robertaison/dataupdate-job 
 ```
 
 - Third, we must download the others projects used on solution
