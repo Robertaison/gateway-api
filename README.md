@@ -24,7 +24,7 @@ Example: docker-compose -f mongo.yaml
 ```
 So, we must download and run each one of the projetcs below:
 - First one: https://github.com/Robertaison/dataupdate-job
- *It must be the first one because it'll create de queue structures used by others services.*
+ (It must be the first one because it'll create de queue structures used by others services)
 - https://github.com/Robertaison/gateway-api (This one)
 - https://github.com/Robertaison/scoredata-api
 - https://github.com/Robertaison/tracedata-api
