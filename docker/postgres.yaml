@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  postgres-image:
+    image: postgres
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "dataprovider"
+    ports:
+      - "15432:5432"
+    volumes:
+      - /home/professional/Desenvolvimento/Docker-Compose/PostgreSQL:/var/lib/postgresql/data 
