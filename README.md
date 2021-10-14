@@ -23,8 +23,14 @@ Example: docker-compose -f mongo.yaml
 - Second we must download all projects that belongs to this solution
 ```
 So, we must download and run each one of the projetcs below:
-- First one: https://github.com/Robertaison/dataupdate-job
- (It must be the first one because it'll create de queue structures used by others services)
+- First one: https://github.com/Robertaison/dataupdate-job  
+- After we need post some data to build rabbit structure (needs fix)
+(It must be the first one because it'll create de queue structures used by others services)
+- To check how do posts look at read me
+```
+
+- Third we must download the others projects used on solution
+```
 - https://github.com/Robertaison/gateway-api (This one)
 - https://github.com/Robertaison/scoredata-api
 - https://github.com/Robertaison/tracedata-api
