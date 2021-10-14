@@ -10,5 +10,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface ScoreDataClient {
 
   @RequestMapping(method = RequestMethod.GET, value = "/score-data")
-  ScoreDataDto get(@RequestParam String cpf);
+  ScoreDataDto getScoreDataFromCustomer(@RequestParam String cpf);
 }
